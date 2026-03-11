@@ -248,13 +248,3 @@ Created as a **frontend + backend portfolio project** demonstrating:
 * responsive layouts
 * PHP form handling
 * event-driven web interfaces
-
----
-
-If you want, I can also give you a **much stronger GitHub portfolio version** that includes:
-
-* ⭐ **GitHub profile badges**
-* ⭐ **live demo section**
-* ⭐ **technology stack badges**
-* ⭐ **GIF preview of the envelope animation**
-* ⭐ **professional README layout like top open-source projects**.
