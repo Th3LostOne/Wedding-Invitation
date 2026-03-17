@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@400;600&family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Styles: envelope first, invitation second (invitation rules win on body) -->
+    <link rel="stylesheet" href="envelope.css">
+    <link rel="stylesheet" href="Styles.css">
+    <!-- Scripts -->
+    <script src="envelope.js" defer></script>
+    <script src="wedding.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ── Envelope Overlay (sits on top until seal is clicked) ── -->
+    <div class="envelope-overlay" id="envelopeOverlay">
+        <div class="stage">
+            <div class="envelope" id="envelope">
+                <div class="flap" id="flap"></div>
+                <div class="seal" id="seal">
+                    <img src="photos/seal.jpg" alt="Seal">
+                </div>
+                <div class="card" id="card"></div>
+            </div>
+            <p class="hint">Your invitation awaits</p>
+        </div>
+    </div>
+
+    <!-- ── Wedding Invitation Card ── -->
+    <div class="invitation">
+
+        <!-- Countdown injected here by JS -->
+
+        <p class="intro">Together with their families</p>
+
+        <h1 class="names">
+            Groom's Name <span>&</span> Bride's Name
+        </h1>
+
+        <p class="invite-text">
+            request the pleasure of your company<br>at their wedding celebration
+        </p>
+
+        <div class="ornament">✦</div>
+
+        <div class="details">
+            <p class="date">Sunday, September 27, 2026</p>
+            <p class="time">6:00 in the Evening</p>
+            <p class="venue">Venue Name</p>
+            <p class="location">City, Province</p>
+            <p class="time-to-respond">Kindly respond by August 30, 2026</p>
+        </div>
+
+        <div class="ornament">✦</div>
+
+        <p class="footer">More details to follow</p>
+
+        <!-- RSVP injected here by JS -->
+
+    </div>
+
+
+    <!-- ── Photo Gallery ── -->
+    <section class="gallery-section">
+        <h2 class="gallery-heading">Our Story</h2>
+        <p class="gallery-sub">A journey of love worth celebrating</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-index="0">
+                <img src="photos/photo-1.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+            <div class="gallery-item" data-index="1">
+                <img src="photos/photo-2.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+            <div class="gallery-item" data-index="2">
+                <img src="photos/photo-3.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+            <div class="gallery-item" data-index="3">
+                <img src="photos/photo-4.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+            <div class="gallery-item" data-index="4">
+                <img src="photos/photo-5.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+            <div class="gallery-item" data-index="5">
+                <img src="photos/photo-6.jpg" alt="The Couple">
+                <div class="gallery-overlay"><span>&#43;</span></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ── Lightbox ── -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox-prev"  id="lightboxPrev"  aria-label="Previous">&#8249;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="The Couple">
+        <button class="lightbox-next"  id="lightboxNext"  aria-label="Next">&#8250;</button>
+    </div>
+
+</body>
+</html>
